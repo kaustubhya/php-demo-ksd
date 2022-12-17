@@ -11,9 +11,9 @@ if(file_exists($file)){
 }
 else{
     $handle = fopen($file, 'w');
-    $contents = 'Brad' . PHP_EOL . 'Sara' . PHP_EOL . 'Rubesh';
-    $fwrite($handle, $contents);
-    $fclose($handle);
+    $contents = 'Brad' . PHP_EOL . 'Sara' . PHP_EOL . 'Rubesh' . PHP_EOL . 'Donald' . PHP_EOL . 'Savitri Bai'; 
+    fwrite($handle, $contents);
+    fclose($handle);
 }
 
 ?>
